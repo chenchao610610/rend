@@ -21,9 +21,9 @@ import (
 	"math"
 	"time"
 
-	"github.com/netflix/rend/binprot"
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/metrics"
+	"github.com/hongst/rend/binprot"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/metrics"
 )
 
 var (

@@ -23,12 +23,12 @@ import (
 	"runtime/debug"
 	"sync"
 
-	"github.com/netflix/rend/handlers"
-	"github.com/netflix/rend/handlers/inmem"
-	"github.com/netflix/rend/handlers/memcached"
-	"github.com/netflix/rend/metrics"
-	"github.com/netflix/rend/orcas"
-	"github.com/netflix/rend/server"
+	"github.com/hongst/rend/handlers"
+	"github.com/hongst/rend/handlers/inmem"
+	"github.com/hongst/rend/handlers/memcached"
+	"github.com/hongst/rend/metrics"
+	"github.com/hongst/rend/orcas"
+	"github.com/hongst/rend/server"
 )
 
 func init() {

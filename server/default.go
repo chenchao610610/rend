@@ -19,10 +19,10 @@ import (
 	"io"
 	"log"
 
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/metrics"
-	"github.com/netflix/rend/orcas"
-	"github.com/netflix/rend/timer"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/metrics"
+	"github.com/hongst/rend/orcas"
+	"github.com/hongst/rend/timer"
 )
 
 // DefaultServer is the default server implementation that implements a server

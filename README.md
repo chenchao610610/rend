@@ -1,6 +1,6 @@
 # Rend: Memcached-Compatible Server and Proxy
 
-[![Dev chat at https://gitter.im/Netflix/rend](https://badges.gitter.im/Netflix/rend.svg)](https://gitter.im/Netflix/rend?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![GoDoc](https://godoc.org/github.com/netflix/rend?status.svg)](https://godoc.org/github.com/netflix/rend) [![GoReportCard](https://goreportcard.com/badge/github.com/netflix/rend)](https://goreportcard.com/report/github.com/netflix/rend)
+[![Dev chat at https://gitter.im/Netflix/rend](https://badges.gitter.im/Netflix/rend.svg)](https://gitter.im/Netflix/rend?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![GoDoc](https://godoc.org/github.com/hongst/rend?status.svg)](https://godoc.org/github.com/hongst/rend) [![GoReportCard](https://goreportcard.com/badge/github.com/hongst/rend)](https://goreportcard.com/report/github.com/hongst/rend)
 
 Rend is a proxy whose primary use case is to sit on the same server as both a [memcached](https://github.com/memcached/memcached) process and an SSD-backed L2 cache, such as [RocksDB](https://github.com/facebook/rocksdb). It is written in [Go](https://github.com/golang/go) and is under active development at Netflix. Some more points about Rend:
 
@@ -8,7 +8,7 @@ Rend is a proxy whose primary use case is to sit on the same server as both a [m
  * Speaks a subset of the memcached text and binary protocols
  * Uses binary protocol locally to efficiently communicate with memcached
  * Comes with a load testing and correctness testing client package
- * Modular design to allow different backends to be plugged in (see [rend-lmdb](https://github.com/netflix/rend-lmdb) for an example)
+ * Modular design to allow different backends to be plugged in (see [rend-lmdb](https://github.com/hongst/rend-lmdb) for an example)
 
 Rend is currently in production at Netflix and serving live member traffic. It is serving some of our most important personalization data.
 
@@ -42,14 +42,14 @@ As well, to build Rend, a working Go distribution is required. The latest Go ver
 
 ### Get the Source Code
 
-    git clone https://github.com/Netflix/rend.git
+    git clone https://github.com/hongst/rend.git
     cd rend
 
 ### Build and Run
 
 Rend doesn't require any special build steps. It also does not have any external dependencies. The Go toolchain is used to build and run.
 
-    go build github.com/netflix/rend
+    go build github.com/hongst/rend
     ./rend
 
 ## Basic Server
@@ -59,8 +59,8 @@ Rend doesn't require any special build steps. It also does not have any external
 Getting a basic rend server running is fairly easy:
 
 ```
-go get github.com/netflix/rend
-go build github.com/netflix/rend
+go get github.com/hongst/rend
+go build github.com/hongst/rend
 ./rend --l1-inmem
 ```
 
@@ -98,10 +98,10 @@ To get a working debug server using the Rend libraries, it takes 21 lines of cod
     package main
 
     import (
-        "github.com/netflix/rend/handlers"
-        "github.com/netflix/rend/handlers/inmem"
-        "github.com/netflix/rend/orcas"
-        "github.com/netflix/rend/server"
+        "github.com/hongst/rend/handlers"
+        "github.com/hongst/rend/handlers/inmem"
+        "github.com/hongst/rend/orcas"
+        "github.com/hongst/rend/server"
     )
 
     func main() {

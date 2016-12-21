@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/netflix/rend/client/common"
+	"github.com/hongst/rend/client/common"
 )
 
 type BinProt struct{}

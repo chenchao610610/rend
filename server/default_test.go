@@ -19,8 +19,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/server"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/server"
 )
 
 type ioCloserSpy struct {

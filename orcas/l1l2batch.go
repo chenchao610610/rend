@@ -17,10 +17,10 @@ package orcas
 import (
 	"log"
 
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/handlers"
-	"github.com/netflix/rend/metrics"
-	"github.com/netflix/rend/timer"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/handlers"
+	"github.com/hongst/rend/metrics"
+	"github.com/hongst/rend/timer"
 )
 
 type L1L2BatchOrca struct {

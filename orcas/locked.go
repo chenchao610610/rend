@@ -20,8 +20,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/handlers"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/handlers"
 )
 
 const maxLockSets = 1024

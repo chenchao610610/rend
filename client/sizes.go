@@ -20,10 +20,10 @@ import (
 	"math/rand"
 	"sync"
 
-	"github.com/netflix/rend/client/binprot"
-	"github.com/netflix/rend/client/common"
-	"github.com/netflix/rend/client/f"
-	"github.com/netflix/rend/client/textprot"
+	"github.com/hongst/rend/client/binprot"
+	"github.com/hongst/rend/client/common"
+	"github.com/hongst/rend/client/f"
+	"github.com/hongst/rend/client/textprot"
 )
 
 func main() {

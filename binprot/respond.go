@@ -18,8 +18,8 @@ import (
 	"bufio"
 	"encoding/binary"
 
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/metrics"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/metrics"
 )
 
 // Sample Get response
@@ -248,7 +248,7 @@ func (b BinaryResponder) Error(opaque uint32, reqType common.RequestType, err er
 	return writeErrorResponseHeader(b.writer, reqTypeToOpcode(reqType, quiet), errorToCode(err), opaque)
 }
 
-// Mae sure this includes all possibilities in the github.com/netflix/rend/common.RequestType enum
+// Mae sure this includes all possibilities in the github.com/hongst/rend/common.RequestType enum
 func reqTypeToOpcode(rt common.RequestType, quiet bool) uint8 {
 	switch {
 	case rt == common.RequestGet && quiet:

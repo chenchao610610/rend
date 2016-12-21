@@ -18,8 +18,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/handlers"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/handlers"
 )
 
 type entry struct {

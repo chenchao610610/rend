@@ -14,7 +14,7 @@
 
 package handlers
 
-import "github.com/netflix/rend/common"
+import "github.com/hongst/rend/common"
 
 type HandlerConst func() (Handler, error)
 

@@ -15,9 +15,9 @@
 package orcas
 
 import (
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/handlers"
-	"github.com/netflix/rend/metrics"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/handlers"
+	"github.com/hongst/rend/metrics"
 )
 
 type OrcaConst func(l1, l2 handlers.Handler, res common.Responder) Orca

@@ -17,9 +17,9 @@ package orcas_test
 import (
 	"testing"
 
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/handlers"
-	"github.com/netflix/rend/orcas"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/handlers"
+	"github.com/hongst/rend/orcas"
 )
 
 type testPanicOrca struct{}

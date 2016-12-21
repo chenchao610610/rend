@@ -18,8 +18,8 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/metrics"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/metrics"
 )
 
 const metadataSize = 24 + tokenSize

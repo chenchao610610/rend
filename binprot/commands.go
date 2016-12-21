@@ -18,8 +18,8 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/metrics"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/metrics"
 )
 
 // Data commands are those that send a header, key, exptime, and data

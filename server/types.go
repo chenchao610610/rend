@@ -17,9 +17,9 @@ package server
 import (
 	"io"
 
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/metrics"
-	"github.com/netflix/rend/orcas"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/metrics"
+	"github.com/hongst/rend/orcas"
 )
 
 type ServerConst func(conns []io.Closer, rp common.RequestParser, o orcas.Orca) Server

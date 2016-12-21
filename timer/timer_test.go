@@ -18,7 +18,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/netflix/rend/timer"
+	"github.com/hongst/rend/timer"
 )
 
 func TestMonotonicAndWallTimerDifference(t *testing.T) {

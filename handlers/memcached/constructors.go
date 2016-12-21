@@ -18,9 +18,9 @@ import (
 	"log"
 	"net"
 
-	"github.com/netflix/rend/handlers"
-	"github.com/netflix/rend/handlers/memcached/chunked"
-	"github.com/netflix/rend/handlers/memcached/std"
+	"github.com/hongst/rend/handlers"
+	"github.com/hongst/rend/handlers/memcached/chunked"
+	"github.com/hongst/rend/handlers/memcached/std"
 )
 
 func Regular(sock string) handlers.HandlerConst {

@@ -19,7 +19,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/netflix/rend/client/common"
+	"github.com/hongst/rend/client/common"
 )
 
 const (

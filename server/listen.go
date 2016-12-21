@@ -23,12 +23,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/netflix/rend/binprot"
-	"github.com/netflix/rend/common"
-	"github.com/netflix/rend/handlers"
-	"github.com/netflix/rend/metrics"
-	"github.com/netflix/rend/orcas"
-	"github.com/netflix/rend/textprot"
+	"github.com/hongst/rend/binprot"
+	"github.com/hongst/rend/common"
+	"github.com/hongst/rend/handlers"
+	"github.com/hongst/rend/metrics"
+	"github.com/hongst/rend/orcas"
+	"github.com/hongst/rend/textprot"
 )
 
 func ListenAndServe(l ListenArgs, s ServerConst, o orcas.OrcaConst, h1, h2 handlers.HandlerConst) {

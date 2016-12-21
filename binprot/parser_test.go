@@ -19,8 +19,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/netflix/rend/binprot"
-	"github.com/netflix/rend/common"
+	"github.com/hongst/rend/binprot"
+	"github.com/hongst/rend/common"
 )
 
 func TestUnknownCommand(t *testing.T) {

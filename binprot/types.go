@@ -17,7 +17,7 @@ package binprot
 import (
 	"errors"
 
-	"github.com/netflix/rend/common"
+	"github.com/hongst/rend/common"
 )
 
 var ErrBadMagic = errors.New("Bad magic value")

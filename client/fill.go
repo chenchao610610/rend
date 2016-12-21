@@ -24,12 +24,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/netflix/rend/client/binprot"
-	"github.com/netflix/rend/client/common"
-	"github.com/netflix/rend/client/f"
-	_ "github.com/netflix/rend/client/sigs"
-	"github.com/netflix/rend/client/textprot"
-	"github.com/netflix/rend/timer"
+	"github.com/hongst/rend/client/binprot"
+	"github.com/hongst/rend/client/common"
+	"github.com/hongst/rend/client/f"
+	_ "github.com/hongst/rend/client/sigs"
+	"github.com/hongst/rend/client/textprot"
+	"github.com/hongst/rend/timer"
 )
 
 func init() {

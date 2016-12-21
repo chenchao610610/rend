@@ -23,7 +23,7 @@ package common
 import (
 	"errors"
 
-	"github.com/netflix/rend/metrics"
+	"github.com/hongst/rend/metrics"
 )
 
 const VersionString = "Rend 0.1"
