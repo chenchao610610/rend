@@ -88,6 +88,29 @@ func (t TextParser) Parse() (common.Request, common.RequestType, uint64, error) 
 			NoopEnd: false,
 		}, common.RequestGet, start, nil
 
+	/*
+	 * Added by zhh
+	 */
+	case "stats":
+		if len(clParts) != 1 {
+			return nil, common.RequestQuit, start, common.ErrBadRequest
+		}
+
+		var keys [][]byte
+		for _, key := range clParts[0:] {
+			keys = append(keys, []byte(key))
+		}
+
+		opaques := make([]uint32, len(keys))
+		quiet := make([]bool, len(keys))
+
+		return common.GetRequest{
+			Keys:    keys,
+			Opaques: opaques,
+			Quiet:   quiet,
+			NoopEnd: false,
+		}, common.RequestGet, start, nil
+
 	case "delete":
 		if len(clParts) != 2 {
 			return nil, common.RequestDelete, start, common.ErrBadRequest
